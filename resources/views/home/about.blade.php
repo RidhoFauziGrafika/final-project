@@ -1,7 +1,7 @@
 @extends('layouts/home')
 
 @section('content')
-  <header class="bg-dark py-5">
+  <header class="bg-dark py-5 text-break">
     <div class="container px-4 px-lg-5 my-5">
       <div class="text-center text-white">
         <h1 class="display-4 fw-bolder">Tentang Kami</h1>
@@ -9,7 +9,7 @@
     </div>
   </header>
   <!-- Section-->
-  <section class="py-5">
+  <section class="py-5 text-break">
     <div class="container px-4 px-lg-5 mt-5">
       <div class="row">
           <div class="col mb-5">

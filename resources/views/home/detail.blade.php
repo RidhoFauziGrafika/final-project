@@ -1,7 +1,7 @@
 @extends('layouts/home')
 
 @section('content')
-<header class="bg-dark py-5">
+<header class="bg-dark py-5 text-break">
     <div class="container px-4 px-lg-5 my-5">
       <div class="text-center text-white">
         <h1 class="display-4 fw-bolder">Detail Lapangan</h1>
@@ -9,7 +9,7 @@
     </div>
   </header>
   <!-- Section-->
-  <section class="py-5">
+  <section class="py-5 text-break">
     <div class="container px-4 px-lg-5 mt-5">
       <div class="row justify-content-center">
           <div class="col-lg-8 mb-5">
@@ -33,7 +33,7 @@
             </div>
           </div>
           <div class="col-lg-4 mb-5">
-            <div class="card">
+            <div class="card text-break">
               <!-- Product details-->
               <div class="card-body card-body-custom pt-4">
                 <div class="text-center">

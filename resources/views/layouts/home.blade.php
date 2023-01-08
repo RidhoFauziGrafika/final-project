@@ -62,7 +62,7 @@
                   Welcome back {{ auth()->user()->name }}
                 </a>
                 <ul class="dropdown-menu">
-                  @if (auth()->user()->isAdmin())                      
+                  @if (auth()->user()->isAdmin())
                     <li class="dropdown-item">
                       <a href="/admin/field" class="text-decoration-none text-dark">My Dashboard</a>
                     </li>
@@ -75,7 +75,7 @@
                     </form>
                   </li>
                 </ul>
-              </li>  
+              </li>
             @else
             <li class="nav-item">
               <a class="nav-link text-dark" href="{{ url('/login') }}">Login</a>
@@ -86,7 +86,10 @@
       </div>
     </nav>
     <!-- Header-->
-    @yield('content')
+    <div class="min-vh-100">
+
+        @yield('content')
+    </div>
     <!-- Footer-->
     <footer class="py-5 bg-dark">
       <div class="container">

@@ -54,11 +54,11 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('detail/{id}', [HomeController::class, 'detail']);
     Route::get('order/{id}', [OrderController::class, 'create']);
     Route::resource('order', OrderController::class);
+    Route::get('/orders', [HomeController::class, 'order']);
 });
 
 // front end
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about']);
-Route::get('/orders', [HomeController::class, 'order']);
 Route::get('/contact', [HomeController::class, 'contact']);
 Route::post('/send-email', [SendEmailController::class, 'sendEmail'])->name('send.email');
